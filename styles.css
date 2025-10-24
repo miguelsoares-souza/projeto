@@ -1,4 +1,4 @@
-/* 🌿 ReciclaMais — CSS Responsivo Final */
+
 
 :root {
   --bg: #0f1a14;
@@ -11,9 +11,7 @@
   --radius: 12px;
 }
 
-/* ===========================
-   BASE E RESET
-=========================== */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
@@ -25,9 +23,7 @@ body {
 img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); }
 a { text-decoration: none; color: var(--ink); }
 
-/* ===========================
-   LAYOUT GLOBAL
-=========================== */
+
 .container { width: min(1100px, 92%); margin-inline: auto; }
 .section { padding: clamp(48px, 6vw, 80px) 0; }
 .section-alt { background: var(--bg-alt); }
@@ -39,9 +35,7 @@ a { text-decoration: none; color: var(--ink); }
 }
 .lead { font-size: clamp(1rem, 1.3vw, 1.2rem); color: var(--muted); margin-top: .5rem; }
 
-/* ===========================
-   HEADER
-=========================== */
+
 .site-header {
   background: rgba(15, 26, 20, 0.95);
   backdrop-filter: blur(8px);
@@ -83,9 +77,7 @@ a { text-decoration: none; color: var(--ink); }
 .nav-list a { transition: color .2s; }
 .nav-list a:hover { color: var(--accent); }
 
-/* ===========================
-   BOTÕES
-=========================== */
+
 .btn {
   background: var(--brand);
   color: #0e1a13;
@@ -104,9 +96,7 @@ a { text-decoration: none; color: var(--ink); }
 }
 .btn--small { padding: .5rem .8rem; font-size: .9rem; }
 
-/* ===========================
-   HERO
-=========================== */
+
 .hero {
   padding: clamp(48px, 8vw, 96px) 0 clamp(32px, 6vw, 64px);
 }
@@ -128,9 +118,7 @@ a { text-decoration: none; color: var(--ink); }
 }
 .hero-cta { display: flex; gap: 12px; margin-top: 1rem; flex-wrap: wrap; }
 
-/* ===========================
-   CARDS
-=========================== */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -149,9 +137,7 @@ a { text-decoration: none; color: var(--ink); }
 .card p { color: var(--muted); margin-bottom: 8px; }
 .card .link { color: var(--brand); font-weight: 600; }
 
-/* ===========================
-   SERVIÇOS / MATERIAIS
-=========================== */
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -179,9 +165,7 @@ a { text-decoration: none; color: var(--ink); }
 .material:hover { transform: translateY(-2px); }
 .material h3 { color: var(--accent); font-size: 1.1rem; }
 
-/* ===========================
-   FORMULÁRIOS
-=========================== */
+
 .form {
   background: var(--bg-alt);
   border-radius: var(--radius);
@@ -208,9 +192,7 @@ input:focus, select:focus, textarea:focus {
 }
 .form--narrow { max-width: 420px; margin: 0 auto; }
 
-/* ===========================
-   RODAPÉ
-=========================== */
+
 .site-footer {
   background: #0c1510;
   border-top: 1px solid var(--border);
@@ -239,9 +221,7 @@ input:focus, select:focus, textarea:focus {
   margin-top: 10px;
 }
 
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
+
 @media (max-width: 992px) {
   .hero { text-align: center; }
   .hero-text { margin: 0 auto; }

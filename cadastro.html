@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro — ReciclaMais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" width="28" height="28" viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 5 4 9 9 9s9-4 9-9C21 6 17 2 12 2z"/></svg>
+        <span class="brand-text">ReciclaMais</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Cadastro</h1>
+    <form class="form" action="login.html" method="get">
+      <div class="form-grid">
+        <div class="form-field"><label for="nome">Nome completo</label><input id="nome" name="nome" type="text" required></div>
+        <div class="form-field"><label for="email">E-mail</label><input id="email" name="email" type="email" required></div>
+        <div class="form-field"><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" required></div>
+        <div class="form-field"><label for="endereco">Endereço</label><input id="endereco" name="endereco" type="text" required></div>
+        <div class="form-field"><label for="material">Material</label>
+          <select id="material" name="material" required>
+            <option value="">Selecione</option>
+            <option>Plástico</option><option>Papel</option><option>Metal</option><option>Vidro</option>
+          </select></div>
+        <div class="form-field"><label for="senha">Senha</label><input id="senha" name="senha" type="password" minlength="6" required></div>
+      </div>
+      <button class="btn" type="submit">Enviar e ir para login</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReciclaMais — Reciclagem Consciente e Sustentável</title>
+  <meta name="description" content="Coleta seletiva, triagem e destinação correta de materiais recicláveis. Educação ambiental e parcerias com cooperativas.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" width="28" height="28" viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 5 4 9 9 9s9-4 9-9C21 6 17 2 12 2z"/></svg>
+        <span class="brand-text">ReciclaMais</span>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#materiais">Materiais</a></li>
+          <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+          <li><a href="cadastro.html" class="btn btn--small">Quero participar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="display">Reciclagem Consciente para um Futuro Sustentável</h1>
+          <p class="lead">Coletamos, separamos e destinamos corretamente materiais recicláveis — conectando residências, comércios e cooperativas certificadas.</p>
+          <div class="hero-cta">
+            <a class="btn" href="cadastro.html">Cadastrar Coleta</a>
+            <a class="btn btn--ghost" href="#como-funciona">Como funciona</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="https://st4.depositphotos.com/12985790/19950/i/450/depositphotos_199509362-stock-photo-cropped-view-volunteers-recycling-box.jpg" alt="Equipe realizando triagem de resíduos recicláveis">
+        </figure>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="section container">
+      <h2>Como funciona</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://www.afixgraf.com.br/wp-content/uploads/2019/05/coleta-seletiva-nas-empresas-implemente-.jpg" alt="Caixas de materiais separados para reciclagem">
+          <h3>Coleta Seletiva</h3>
+          <p>Atendemos residências, comércios e empresas com rotas otimizadas e agenda flexível.</p>
+          <a class="link" href="cadastro.html">Agendar coleta</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542382257-80dedb725088?w=800" alt="Esteira de triagem de materiais recicláveis">
+          <h3>Triagem &amp; Parcerias</h3>
+          <p>Separação rigorosa e destinação via cooperativas certificadas e indústrias recicladoras.</p>
+          <a class="link" href="#materiais">Ver materiais</a>
+        </article>
+        <article class="card">
+          <img src="https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/2024/01/criativo-659d9e2345f29MDkvMDEvMjAyNCAxNmgyNw==.jpg?w=1000&h=&auto=compress&dpr=1&fit=max" alt="Pessoas participando de oficina de educação ambiental">
+          <h3>Educação Ambiental</h3>
+          <p>Campanhas e conteúdos para conscientização e redução de resíduos.</p>
+          <a class="link" href="#sustentabilidade">Dicas e impacto</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="servicos" class="section section-alt">
+      <div class="container">
+        <h2>Nossos serviços</h2>
+        <ul class="grid grid-2">
+          <li><span class="badge">Coleta Seletiva</span> em residências, comércios e empresas</li>
+          <li><span class="badge">Triagem</span> de papel, plástico, vidro e metais</li>
+          <li><span class="badge">Parcerias</span> com cooperativas locais</li>
+          <li><span class="badge">Projetos</span> personalizados de gestão de resíduos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="materiais" class="section container">
+      <h2>Materiais recicláveis</h2>
+      <div class="materials">
+        <article class="material"><h3>Plásticos</h3><p>Viram embalagens recicladas e móveis ecológicos.</p></article>
+        <article class="material"><h3>Papéis</h3><p>Transformam-se em papelão e papel reciclado.</p></article>
+        <article class="material"><h3>Metais</h3><p>Reutilizados na indústria automobilística e construção civil.</p></article>
+        <article class="material"><h3>Vidros</h3><p>Retornam à produção de novas embalagens.</p></article>
+      </div>
+    </section>
+
+    <section id="sustentabilidade" class="section section-alt">
+      <div class="container">
+        <h2>Sustentabilidade &amp; ODS</h2>
+        <p>Nosso projeto está alinhado ao <a class="text-link" href="https://brasil.un.org/pt-br/sdgs/12" target="_blank">ODS 12 — Consumo e Produção Responsáveis</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ReciclaMais</strong><br>
+        Rua Sustentável, 123 — Bairro Verde — Cidade/Estado<br>
+        Seg–Sex, 8h–18h
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5599999999999">WhatsApp</a></li>
+          <li><a href="mailto:contato@reciclamais.com">E-mail</a></li>
+          <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>Equipe</strong></p>
+        <ul class="footer-links">
+          <li><a href="https://miguelsoares-souza.github.io/front-end/">Currículo — Miguel Soares de Souza</a></li>
+          <li><a href="#">Currículo — Vitor Hugo Santos Oliveira</a></li>
+          <li><a href="#">Currículo — Guilherme Guimarães Mussi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container legal">
+      <small>© 2025 ReciclaMais. Todos os direitos reservados.</small>
+    </div>
+  </footer>
 </body>
 </html>

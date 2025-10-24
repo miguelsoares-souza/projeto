@@ -1,0 +1,257 @@
+/* 🌿 ReciclaMais — CSS Responsivo Final */
+
+:root {
+  --bg: #0f1a14;
+  --bg-alt: #14261d;
+  --brand: #2ecc71;
+  --accent: #f5c156;
+  --ink: #e9f2ec;
+  --muted: #b7c6bc;
+  --border: rgba(255,255,255,.12);
+  --radius: 12px;
+}
+
+/* ===========================
+   BASE E RESET
+=========================== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); }
+a { text-decoration: none; color: var(--ink); }
+
+/* ===========================
+   LAYOUT GLOBAL
+=========================== */
+.container { width: min(1100px, 92%); margin-inline: auto; }
+.section { padding: clamp(48px, 6vw, 80px) 0; }
+.section-alt { background: var(--bg-alt); }
+
+.display {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw + 1rem, 3.2rem);
+  line-height: 1.3;
+}
+.lead { font-size: clamp(1rem, 1.3vw, 1.2rem); color: var(--muted); margin-top: .5rem; }
+
+/* ===========================
+   HEADER
+=========================== */
+.site-header {
+  background: rgba(15, 26, 20, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.logo { fill: var(--brand); }
+.nav-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-list a { transition: color .2s; }
+.nav-list a:hover { color: var(--accent); }
+
+/* ===========================
+   BOTÕES
+=========================== */
+.btn {
+  background: var(--brand);
+  color: #0e1a13;
+  padding: .7rem 1.1rem;
+  border-radius: 999px;
+  border: 0;
+  font-weight: 600;
+  transition: all .2s ease;
+  display: inline-block;
+}
+.btn:hover { filter: brightness(1.1); transform: translateY(-2px); }
+.btn--ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--ink);
+}
+.btn--small { padding: .5rem .8rem; font-size: .9rem; }
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+  padding: clamp(48px, 8vw, 96px) 0 clamp(32px, 6vw, 64px);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(24px, 5vw, 48px);
+  align-items: center;
+}
+.hero-text {
+  max-width: 600px;
+}
+.hero-media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+.hero-cta { display: flex; gap: 12px; margin-top: 1rem; flex-wrap: wrap; }
+
+/* ===========================
+   CARDS
+=========================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+.card {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 16px;
+  transition: all .2s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.3); }
+.card img { height: 180px; object-fit: cover; }
+.card h3 { margin: 12px 0 6px; font-size: 1.1rem; }
+.card p { color: var(--muted); margin-bottom: 8px; }
+.card .link { color: var(--brand); font-weight: 600; }
+
+/* ===========================
+   SERVIÇOS / MATERIAIS
+=========================== */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+.badge {
+  background: #1f3a2c;
+  border-radius: 20px;
+  padding: .25rem .6rem;
+  font-size: .85rem;
+  color: #c9f3dc;
+}
+.materials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.material {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 14px;
+  transition: transform .2s ease;
+}
+.material:hover { transform: translateY(-2px); }
+.material h3 { color: var(--accent); font-size: 1.1rem; }
+
+/* ===========================
+   FORMULÁRIOS
+=========================== */
+.form {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: clamp(16px, 4vw, 28px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.form-field { display: grid; gap: 6px; }
+label { font-weight: 600; }
+input, select, textarea {
+  padding: .75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #0f1a14;
+  color: var(--ink);
+}
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--brand);
+  border-color: transparent;
+}
+.form--narrow { max-width: 420px; margin: 0 auto; }
+
+/* ===========================
+   RODAPÉ
+=========================== */
+.site-footer {
+  background: #0c1510;
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+.footer-links {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+.footer-links a:hover { color: var(--accent); }
+.legal {
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: .9rem;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 992px) {
+  .hero { text-align: center; }
+  .hero-text { margin: 0 auto; }
+  .hero img { max-width: 80%; margin: 0 auto; }
+  .btn { width: auto; }
+}
+
+@media (max-width: 600px) {
+  html { font-size: 15px; }
+  .hero img { max-width: 100%; }
+  .hero-cta { justify-content: center; }
+  .header-inner { flex-direction: column; }
+  .nav-list { justify-content: center; gap: 10px; }
+  .btn { width: 100%; text-align: center; }
+  .footer-grid { text-align: center; }
+}
+
+@media (max-width: 400px) {
+  html { font-size: 14px; }
+  .display { font-size: 1.6rem; }
+  .btn { font-size: .9rem; }
+  .nav-list { flex-direction: column; gap: 6px; }
+}
